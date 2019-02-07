@@ -2,6 +2,10 @@
 <title>Calculator</title><meta charset="utf-8">
 <script type="text/javascript">
 
+function squar() {
+  var num = document.getElementById("n1");
+  num.value = Math.pow(num.value, 2);
+}
 function cube() {
   var num = document.getElementById("n1");
   num.value = Math.pow(num.value, 3);
@@ -26,6 +30,7 @@ function sine() {
   Number:
   <input type="text" id="n1"><p>
 
+  <button onclick="squar()"> x^2 </button>
   <button onclick="cube()"> x^3 </button>
   <button onclick="fourth()"> x^4 </button>
   <button onclick="sine()"> sin(x) </button>
